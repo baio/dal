@@ -172,6 +172,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\ProjectModel.cs" />
     <Compile Include="Models\ProjectSummaryModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resource.Projects.Designer.cs">
@@ -541,6 +542,7 @@
     <Content Include="Views\Home\Project.cshtml" />
     <Content Include="Views\Project\_Summary.cshtml" />
     <Content Include="Views\Project\Item.cshtml" />
+    <Content Include="Views\Project\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\img\logo\" />

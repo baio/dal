@@ -11,6 +11,10 @@ namespace dal.Controllers
     [VersionFilterAttribute]
     public class ProjectController : Controller
     {
+        public ActionResult Index()
+        {
+            return View();
+        }
         
         public ActionResult TwiTur()
         {
