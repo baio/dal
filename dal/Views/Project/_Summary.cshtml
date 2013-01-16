@@ -1,0 +1,44 @@
+﻿@{
+    dal.Models.ProjectSummaryModel summary = ViewBag.ProjectSummary;
+}
+@if(summary != null)
+{
+<h4 class="title grey">Project Details</h4>
+<table class="table">
+    <tbody>
+        <tr>
+            <td class="bold">Company:</td>
+            <td>@summary.Company</td>
+        </tr>
+        <tr>
+            <td class="bold">Website:</td>
+            <td><a href="@summary.WebsiteUrl">@summary.WebsiteCaption</a></td>
+        </tr>
+        <tr>
+            <td class="bold">Source:</td>
+            <td><a href="@summary.SourceUrl">@summary.SourceCaption</a></td>
+        </tr>
+        <tr>
+            <td class="bold">Features:</td>
+            <td>
+                @Html.Raw(summary.Features)
+            </td>
+        </tr>
+        <tr>
+            <td class="bold">Challenges:</td>
+            <td>
+                @Html.Raw(summary.Challenges)
+            </td>
+        </tr>
+        <tr>
+            <td class="bold">Duration:</td>
+            <td>@summary.Duration months</td>
+        </tr>
+        <tr>
+            <td class="bold">Team:</td>
+            <td>@summary.Team[0]<br>
+            </td>
+        </tr>
+    </tbody>
+</table>
+}
