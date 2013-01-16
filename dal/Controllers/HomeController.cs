@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dal.Filters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -6,7 +7,7 @@ using System.Web.Mvc;
 
 namespace dal.Controllers
 {
-    
+    [VersionFilterAttribute]
     public class HomeController : Controller
     {
         public ActionResult Index()
