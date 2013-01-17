@@ -13,7 +13,54 @@ namespace dal.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var model = new ProjectModel[]
+            {
+                new ProjectModel {
+                    Title = "TwiTur.ru",
+                    Description = "TwiTur",
+                    Text = "Agile tour seracher",
+                    Img = "img/work/bahia.jpg",
+                    Url = "/Project/TwiTur"
+                },
+                new ProjectModel {
+                    Title = "Zava.su",
+                    Description = "Zava",
+                    Text = "Portal for zavjalikha mountain ski resort",
+                    Img = "img/work/zav3.jpg",
+                    Url = "/Project/Zava"
+                },
+                new ProjectModel {
+                    Title = "Prezek.org",
+                    Description = "Prezek",
+                    Text = "Find your election post in Moscow",
+                    Img = "img/work/election2012.jpg",
+                    Url = "/Project/Prezek"
+                },
+                new ProjectModel {
+                    Title = "WinForms MVC",
+                    Description = "WinForms MVC",
+                    Text = "MVC Framework for WinForms",
+                    Img = "img/work/winform.jpg",
+                    Url = "/Project/WinForms"
+                },
+                new ProjectModel {
+                    Title = "Ural SPA",
+                    Description = "Ural",
+                    Text = "MVC Framework for web applications",
+                    Img = "img/work/ural.jpg",
+                    Url = "/Project/Ural"
+                },
+                new ProjectModel {
+                    Title = "Even More",
+                    Description = "More",
+                    Text = "More projects",
+                    Img = "img/work/books.jpg",
+                    Url = "/Project/More"
+                },
+
+            };
+            
+            return View(model);
         }
         
         public ActionResult TwiTur()
