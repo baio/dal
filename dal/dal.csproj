@@ -452,6 +452,7 @@
     <Content Include="assets\font-awesome\sass\font-awesome.sass" />
     <Content Include="assets\font-awesome\sass\font-awesome.scss" />
     <Content Include="assets\img\buzz\buzz_logos.psd" />
+    <Content Include="App_Code\Helpers.cshtml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="img\logos\amazon-web-services.png" />
     <Content Include="img\logos\amazon-webservices-logo.png" />

@@ -48,14 +48,14 @@
 				          		<div class="nav-collapse collapse">
 				            		
 									<ul class="nav">
-										<li class="active"><a href="/">Home</a></li>
-                                        <li><a href="/Project">Projects</a></li>
-				              			<li><a href="/Home/About">About</a></li>
-										<li><a href="Home/Services">Services</a></li>
+										<li @Helpers.CurrentMenuItem("Home", "Index", Url.RequestContext.RouteData)><a href="/">Home</a></li>
+                                        <li @Helpers.CurrentMenuItem("Project", "Index", Url.RequestContext.RouteData)><a href="/Project">Projects</a></li>
+				              			<li @Helpers.CurrentMenuItem("Home", "About", Url.RequestContext.RouteData)><a href="/Home/About">About</a></li>
+										<li @Helpers.CurrentMenuItem("Home", "Srvices", Url.RequestContext.RouteData)><a href="Home/Services">Services</a></li>
 										@*<li><a href="pricing.html">Pricing</a></li>*@
 										<li><a href="blog.html">Blog</a></li>
 				              			<li><a href="faq.html">FAQ</a></li>
-										<li><a href="contact.html">Contact</a></li>
+										<li @Helpers.CurrentMenuItem("Home", "Contact", Url.RequestContext.RouteData)><a href="/Home/Contact">Contact</a></li>
 				            		</ul><!-- /nav -->
 
 				          		</div><!-- /nav-collapse -->

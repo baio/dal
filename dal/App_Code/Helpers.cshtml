@@ -1,0 +1,4 @@
+﻿@helper CurrentMenuItem(string Controller, string Action, System.Web.Routing.RouteData RouteData )
+{
+    if (RouteData.Values["controller"].Equals(Controller) && RouteData.Values["action"].Equals(Action)) { <text>class = "active"</text> }
+}
