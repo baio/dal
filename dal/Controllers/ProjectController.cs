@@ -9,6 +9,7 @@ using System.Web.Mvc;
 namespace dal.Controllers
 {
     [VersionFilterAttribute]
+    [BlogFeedReaderAttribute]
     public class ProjectController : Controller
     {
         public ActionResult Index()

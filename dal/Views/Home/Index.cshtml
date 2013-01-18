@@ -1,5 +1,6 @@
 ﻿@{
     ViewBag.Title = "Main Page";
+    var latestTweets = (dal.Models.TwitModel[]) ViewBag.LatestTweets;
 }
 <div id="slider" class="clearfix">
 
@@ -188,16 +189,14 @@
                 <h4 class="title dark-grey">Latest Tweets</h4>
                 <div class="media">
                     <div class="media-body">
-                        <div class="bold">AnyBiz. @@anybizz</div>
-                        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-							    <a href="#" class="">http://t.co/SJPmv81g</a>
+                        <div class="bold">Data-Avail. @@@latestTweets[0].Name</div>
+                        @Html.Raw(@latestTweets[0].Text)
                     </div>
                 </div>
                 <div class="media">
                     <div class="media-body">
-                        <div class="bold">AnyBiz. @@anybizz</div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-							  <a href="#" class="">http://t.co/SJPmv11g</a>
+                        <div class="bold">Data-Avail. @@@latestTweets[1].Name</div>
+                        @Html.Raw(@latestTweets[1].Text)
                     </div>
                 </div>
             </div>

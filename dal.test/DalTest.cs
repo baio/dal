@@ -11,5 +11,11 @@ namespace dal.test
         {
             var r = Utils.ReadBlogFeed();
         }
+
+        [TestMethod]
+        public void TestTwitReader()
+        {
+            var r = Utils.ReadTweets();
+        }
     }
 }

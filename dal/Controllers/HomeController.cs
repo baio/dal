@@ -15,6 +15,8 @@ namespace dal.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.LatestTweets = Utils.ReadTweets().ToArray();
+
             return View();
         }
 
