@@ -23,6 +23,10 @@
 		<link href="/assets/flexslider2/flexslider.css" rel="stylesheet">				
 	</head>
 
+    @{
+        dal.Models.BlogFeedModel [] blogFeed = ViewBag.BlogFeed;
+    }
+
 	<body>
 
 		<div id="header">
@@ -96,20 +100,20 @@
 					<div class="span3">
 						<h4 class="title"><i class="icon-comments"></i>Latest From Blog</h4>	
 						<div class="media">
-							<a class="pull-left" href="blog.html">
-							    <img class="media-object img-polaroid" src="/assets/img/blog/thumb1.jpg">
+							<a class="pull-left" href="@blogFeed[0].Link">
+							    <img width="89" height="64" class="media-object img-polaroid" src="@blogFeed[0].Img">
 							</a>
 							<div class="media-body">
-							    Cras sit amet nibh libero, in gravida nulla, in gravida nulla...
+							    @blogFeed[0].Text
 							    <br><a href="blog.html" class="">read more</a>
 							</div>
 						</div>	
 						<div class="media">
-							<a class="pull-left" href="blog.html">
-							    <img class="media-object img-polaroid" src="/assets/img/blog/thumb2.jpg">
+							<a class="pull-left" href="@blogFeed[1].Link">
+							    <img width="89" height="64" class="media-object img-polaroid" src="@blogFeed[1].Img">
 							</a>
 							<div class="media-body">
-							   	Fusce condimentum nunc ac nisi vulputate nunc ac nisi...
+							   	@blogFeed[1].Text
 							    <br><a href="blog.html" class="">read more</a>
 							</div>
 						</div>	
