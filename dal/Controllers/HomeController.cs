@@ -20,6 +20,11 @@ namespace dal.Controllers
             return View();
         }
 
+        public ActionResult Services()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your app description page.";

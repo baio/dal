@@ -553,6 +553,7 @@
     <Content Include="Views\Project\_Summary.cshtml" />
     <Content Include="Views\Project\Item.cshtml" />
     <Content Include="Views\Project\Index.cshtml" />
+    <Content Include="Views\Home\Services.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\img\logo\" />

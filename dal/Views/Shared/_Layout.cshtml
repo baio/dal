@@ -55,10 +55,10 @@
 										<li @Helpers.CurrentMenuItem("Home", "Index", Url.RequestContext.RouteData)><a href="/">Home</a></li>
                                         <li @Helpers.CurrentMenuItem("Project", "Index", Url.RequestContext.RouteData)><a href="/Project">Projects</a></li>
 				              			<li @Helpers.CurrentMenuItem("Home", "About", Url.RequestContext.RouteData)><a href="/Home/About">About</a></li>
-										<li @Helpers.CurrentMenuItem("Home", "Srvices", Url.RequestContext.RouteData)><a href="Home/Services">Services</a></li>
-										@*<li><a href="pricing.html">Pricing</a></li>*@
-										<li><a href="blog.html">Blog</a></li>
-				              			<li><a href="faq.html">FAQ</a></li>
+										<li @Helpers.CurrentMenuItem("Home", "Services", Url.RequestContext.RouteData)><a href="/Home/Services">Services</a></li>
+										<li @Helpers.CurrentMenuItem("Home", "Offer", Url.RequestContext.RouteData)><a href="/Home/Offer">Offer</a></li>
+										<li><a href="http://data-avail.blogspot.ru/">Blog</a></li>
+				              			<li><a href="http://dataavail.uservoice.com/knowledgebase/articles/157510-faq">FAQ</a></li>
 										<li @Helpers.CurrentMenuItem("Home", "Contact", Url.RequestContext.RouteData)><a href="/Home/Contact">Contact</a></li>
 				            		</ul><!-- /nav -->
 
@@ -146,14 +146,14 @@
 
 						<h4 class="title"><i class="icon-heart"></i>Stay Tuned</h4>
 						<div class="clearfix">
-							<a href="#" class="iconify"><i class="icon-linkedin"></i></a>
+							<a href="http://www.linkedin.com/company/2895237" class="iconify"><i class="icon-linkedin"></i></a>
 							<!--<a href="#" class="iconify"><i class="icon-google-plus"></i></a>-->
-							<a href="#" class="iconify"><i class="icon-twitter"></i></a>
+							<a href="https://twitter.com/dataavail" class="iconify"><i class="icon-twitter"></i></a>
                             <!--
 							<a href="#" class="iconify"><i class="icon-facebook"></i></a>
 							<a href="#" class="iconify"><i class="icon-pinterest"></i></a>
                             -->
-							<a href="#" class="iconify"><i class="icon-github"></i></a>
+							<a href="https://github.com/data-avail" class="iconify"><i class="icon-github"></i></a>
 						</div>	
 					</div>														
 						
@@ -171,19 +171,19 @@
 						
 						<div id="quick-menu" class="span6 pull-right">						
 							<ul class="menu white pull-right">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="projects.html">Projects</a></li>
-								<li><a href="services.html">Services</a></li>
-								<li><a href="pricing.html">Pricing</a></li>
-								<li><a href="blog.html">Blog</a></li>
-								<li><a href="faq.html">FAQ</a></li>
-								<li><a href="contact.html">Contact</a></li>
+								<li><a href="/">Home</a></li>
+								<li><a href="/Home/About">About</a></li>
+								<li><a href="/Home/Projects">Projects</a></li>
+								<li><a href="/Home/Services">Services</a></li>
+								<li><a href="/Home/Offer">Offer</a></li>
+								<li><a href="http://data-avail.blogspot.ru/">Blog</a></li>
+								<li><a href="http://dataavail.uservoice.com/knowledgebase/articles/157510-faq">FAQ</a></li>
+								<li><a href="/Home/Contact">Contact</a></li>
 							</ul>
 						</div><!-- /quick-menu -->
 
 						<div id="copyright" class="span6 pull-left">
-							&copy; 2012 Data-Avail. All Rights Reserved. @ViewBag.Version
+							&copy; 2013 Data-Avail. All Rights Reserved. @ViewBag.Version
 						</div><!-- /copyright -->
 
 					</div>
