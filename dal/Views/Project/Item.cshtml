@@ -21,10 +21,10 @@
 
         <div class="row-fluid">
 
-            <div class="span4">                
+            <div class="span4">
                 @Html.Partial("_Summary")
             </div>
-            
+
 
             <div class="span8">
 
@@ -36,7 +36,7 @@
                                 <ul class="slides" style="width: 800%; -webkit-transition: 0.6s; -webkit-transform: translate3d(0px, 0, 0);">
                                     <li style="width: 385px; float: left; display: block;">
                                         <div class="work img-polaroid">
-                                            <a class="fancybox-button" rel="fancybox-button" title="Feature #2" href="assets/img/work/work1.jpg">
+                                            <a class="fancybox-button" rel="fancybox-button" title="Feature #2" href="/assets/img/work/work1.jpg">
                                                 <div class="overlay-zoom">
                                                     <img src="/assets/img/work/work1.jpg" alt="project 2">
                                                     <div class="zoom-icon"></div>
@@ -47,7 +47,7 @@
                                     </li>
                                     <li style="width: 385px; float: left; display: block;">
                                         <div class="work img-polaroid">
-                                            <a class="fancybox-button" rel="fancybox-button" title="Feature #2" href="assets/img/work/work2.jpg">
+                                            <a class="fancybox-button" rel="fancybox-button" title="Feature #2" href="/assets/img/work/work2.jpg">
                                                 <div class="overlay-zoom">
                                                     <img src="/assets/img/work/work2.jpg" alt="project 2">
                                                     <div class="zoom-icon"></div>
@@ -58,7 +58,7 @@
                                     </li>
                                     <li style="width: 385px; float: left; display: block;">
                                         <div class="work img-polaroid">
-                                            <a class="fancybox-button" rel="fancybox-button" title="Feature #3" href="assets/img/work/work3.jpg">
+                                            <a class="fancybox-button" rel="fancybox-button" title="Feature #3" href="/assets/img/work/work3.jpg">
                                                 <div class="overlay-zoom">
                                                     <img src="/assets/img/work/work3.jpg" alt="project 3">
                                                     <div class="zoom-icon"></div>
@@ -69,7 +69,7 @@
                                     </li>
                                     <li style="width: 385px; float: left; display: block;">
                                         <div class="work img-polaroid">
-                                            <a class="fancybox-button" rel="fancybox-button" title="Feature #4" href="assets/img/work/work4.jpg">
+                                            <a class="fancybox-button" rel="fancybox-button" title="Feature #4" href="/assets/img/work/work4.jpg">
                                                 <div class="overlay-zoom">
                                                     <img src="/assets/img/work/work4.jpg" alt="project 4">
                                                     <div class="zoom-icon"></div>
@@ -80,10 +80,6 @@
                                     </li>
                                 </ul>
                             </div>
-                            <ol class="flex-control-nav flex-control-paging">
-                                <li><a class="flex-active">1</a></li>
-                                <li><a class="">2</a></li>
-                            </ol>
                         </div>
                     </div>
                 </div>
@@ -94,7 +90,7 @@
                     </div>
                     <div class="span6">
                         <p>
-                            <iframe src="http://player.vimeo.com/video/9178386?badge=0" width="100%" height="300" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                            <!--<iframe src="http://player.vimeo.com/video/9178386?badge=0" width="100%" height="300" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>-->
                         </p>
                     </div>
                 </div>
@@ -105,3 +101,13 @@
     </div>
 
 </div>
+
+@section Scripts{
+    <script>
+    jQuery(document).ready(function() {
+  	    App.initInner();
+	    App.initGeneral();
+	    App.initProjects();
+    });
+    </script>
+}

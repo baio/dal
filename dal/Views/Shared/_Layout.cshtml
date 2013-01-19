@@ -21,6 +21,7 @@
 		<link href="/assets/css/effects.css" rel="stylesheet">
 		<link href="/assets/fancybox/source/jquery.fancybox.css" rel="stylesheet">
 		<link href="/assets/flexslider2/flexslider.css" rel="stylesheet">				
+        <link href="/assets/fancybox/source/jquery.fancybox.css" rel="stylesheet">
 	</head>
 
     @{
@@ -36,7 +37,7 @@
 				<div class="row-fluid">
 						
 					<div id="logo">						
-						<img src="/assets/img/data-avail-logo.png" alt="Logo">
+						<a href="/"><img src="/assets/img/data-avail-logo.png" alt="Logo"></a>
 					</div><!-- /logo -->
 						
 					<div id="main-menu">
@@ -202,11 +203,6 @@
 		<script src="assets/js/respond.js"></script>
 		<![endif]-->
 		<script src="/assets/js/app.js"></script>	
+        @RenderSection("Scripts", required : false)
 	</body>
 </html>	
-<script>
-    jQuery(document).ready(function () {
-        App.initMain();
-        App.initGeneral();
-    });
-</script>		

@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Main Page";
+    ViewBag.Title = "Home";
     var latestTweets = (dal.Models.TwitModel[]) ViewBag.LatestTweets;
 }
 <div id="slider" class="clearfix">
@@ -204,3 +204,12 @@
     </div>
 
 </div>
+
+@section Scripts{
+    <script>
+        jQuery(document).ready(function () {
+            App.initMain();
+            App.initGeneral();
+        });
+    </script>		    
+}
