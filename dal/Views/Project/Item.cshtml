@@ -31,53 +31,21 @@
                 <div class="row-fluid">
                     <div class="span12">
                         <div class="flexslider flexslider_single clearfix">
-
                             <div class="flex-viewport" style="overflow: hidden; position: relative;">
                                 <ul class="slides" style="width: 800%; -webkit-transition: 0.6s; -webkit-transform: translate3d(0px, 0, 0);">
-                                    <li style="width: 385px; float: left; display: block;">
-                                        <div class="work img-polaroid">
-                                            <a class="fancybox-button" rel="fancybox-button" title="Landing Page" href="/img/projects/twitur/bahia.jpg">
-                                                <div class="overlay-zoom">
-                                                    <img src="/img/projects/twitur/bahia-thumb.jpg" alt="bahia">
-                                                    <div class="zoom-icon"></div>
-                                                    <div class="desc">Landing Page</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li style="width: 385px; float: left; display: block;">
-                                        <div class="work img-polaroid">
-                                            <a class="fancybox-button" rel="fancybox-button" title="Home Page" href="/img/projects/twitur/twitur-home.jpg">
-                                                <div class="overlay-zoom">
-                                                    <img src="/img/projects/twitur/twitur-home-thumb.jpg" alt="twitur - home">
-                                                    <div class="zoom-icon"></div>
-                                                    <div class="desc">Home Page</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li style="width: 385px; float: left; display: block;">
-                                        <div class="work img-polaroid">
-                                            <a class="fancybox-button" rel="fancybox-button" title="Feature #3" href="/img/projects/twitur/twitur-filter.jpg">
-                                                <div class="overlay-zoom">
-                                                    <img src="/img/projects/twitur/twitur-filter-thumb.jpg" alt="twitur - filter">
-                                                    <div class="zoom-icon"></div>
-                                                    <div class="desc">Filter Page</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li style="width: 385px; float: left; display: block;">
-                                        <div class="work img-polaroid">
-                                            <a class="fancybox-button" rel="fancybox-button" title="Stored Filters" href="/img/projects/twitur/twitur-stored.jpg">
-                                                <div class="overlay-zoom">
-                                                    <img src="/img/projects/twitur/twitur-stored-thumb.jpg" alt="Stored Filters">
-                                                    <div class="zoom-icon"></div>
-                                                    <div class="desc">Stored Filters</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
+                                    @foreach(dal.Models.ProjectSlideModel slide in ViewBag.Slides){
+                                        <li style="width: 385px; float: left; display: block;">
+                                            <div class="work img-polaroid">
+                                                <a class="fancybox-button" rel="fancybox-button" title="@slide.Title" href="@slide.Img">
+                                                    <div class="overlay-zoom">
+                                                        <img src="@slide.Thumb" alt="@slide.Title">
+                                                        <div class="zoom-icon"></div>
+                                                        <div class="desc">@slide.Title</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    }
                                 </ul>
                             </div>
                         </div>

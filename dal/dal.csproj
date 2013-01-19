@@ -179,6 +179,7 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\BlogFeedModel.cs" />
     <Compile Include="Models\ProjectModel.cs" />
+    <Compile Include="Models\ProjectSlideModel.cs" />
     <Compile Include="Models\ProjectSummaryModel.cs" />
     <Compile Include="Models\TwitModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

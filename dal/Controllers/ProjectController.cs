@@ -82,6 +82,13 @@ namespace dal.Controllers
 
             ViewBag.Body = Resource_Projects.TwiTur;
 
+            ViewBag.Slides = new ProjectSlideModel[] {
+                        new ProjectSlideModel { Img = "/img/projects/twitur/bahia.jpg", Thumb =  "/img/projects/twitur/bahia-thumb.jpg", Title = "Landing Page"},
+                        new ProjectSlideModel { Img = "/img/projects/twitur/twitur-home.jpg", Thumb =  "/img/projects/twitur/twitur-home-thumb.jpg", Title = "Home Page"},
+                        new ProjectSlideModel { Img = "/img/projects/twitur/twitur-filter.jpg", Thumb =  "/img/projects/twitur/twitur-filter-thumb.jpg", Title = "Filter Page"},
+                        new ProjectSlideModel { Img = "/img/projects/twitur/twitur-stored.jpg", Thumb =  "/img/projects/twitur/twitur-stored-thumb.jpg", Title = "Stored Filters"}
+                    };
+
             return View("Item");
         }
 
