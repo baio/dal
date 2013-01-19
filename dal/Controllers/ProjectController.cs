@@ -191,6 +191,13 @@ namespace dal.Controllers
 
             ViewBag.Body = Resource_Projects.WinForms;
 
+            ViewBag.Slides = new ProjectSlideModel[] {
+                        new ProjectSlideModel { Img = "/img/projects/winforms-mvc/winform.jpg", Thumb =  "/img/projects/winforms-mvc/winform.jpg", Title = "Landing"},
+                        new ProjectSlideModel { Img = "/img/projects/winforms-mvc/winforms-mvc-home.jpg", Thumb =  "/img/projects/winforms-mvc/winforms-mvc-home-thumb.jpg", Title = "List of items"},
+                        new ProjectSlideModel { Img = "/img/projects/winforms-mvc/winforms-mvc-manyopen.jpg", Thumb =  "/img/projects/winforms-mvc/winforms-mvc-manyopen-thumb.jpg", Title = "Children windows"},
+                        new ProjectSlideModel { Img = "/img/projects/winforms-mvc/winforms-mvc-people.jpg", Thumb =  "/img/projects/winforms-mvc/winforms-mvc-people-thumb.jpg", Title = "Edit items"}
+                    };
+
             return View("Item");
 
         }
