@@ -111,6 +111,13 @@ namespace dal.Controllers
 
             ViewBag.Body = Resource_Projects.TwiTur;
 
+            ViewBag.Slides = new ProjectSlideModel[] {
+                        new ProjectSlideModel { Img = "/img/projects/zava/zava-landing.jpg", Thumb =  "/img/projects/zava/zava-landing-thumb.jpg", Title = "Landing Page"},
+                        new ProjectSlideModel { Img = "/img/projects/zava/zava-home.jpg", Thumb =  "/img/projects/zava/zava-home-thumb.jpg", Title = "Home Page"},
+                        new ProjectSlideModel { Img = "/img/projects/zava/zava-news.jpg", Thumb =  "/img/projects/zava/zava-news-thumb.jpg", Title = "News Page"},
+                        new ProjectSlideModel { Img = "/img/projects/zava/zava-faq.jpg", Thumb =  "/img/projects/zava/zava-faq-thumb.jpg", Title = "Faq Page"}
+                    };
+
             return View("Item");
         }
 
@@ -132,6 +139,13 @@ namespace dal.Controllers
             };
 
             ViewBag.Body = Resource_Projects.Prezek;
+
+            ViewBag.Slides = new ProjectSlideModel[] {
+                        new ProjectSlideModel { Img = "/img/projects/prezek/prezek-landing.jpg", Thumb =  "/img/projects/prezek/prezek-landing-thumb.jpg", Title = "Landing Page"},
+                        new ProjectSlideModel { Img = "/img/projects/prezek/prezek-home.jpg", Thumb =  "/img/projects/prezek/prezek-home-thumb.jpg", Title = "Home Page"},
+                        new ProjectSlideModel { Img = "/img/projects/prezek/prezek-selected.jpg", Thumb =  "/img/projects/prezek/prezek-selected-thumb.jpg", Title = "Selected election post"},
+                        new ProjectSlideModel { Img = "/img/projects/prezek/prezek-found.jpg", Thumb =  "/img/projects/prezek/prezek-found-thumb.jpg", Title = "Nearby and similar posts"}
+                    };
 
             return View("Item");
         }
