@@ -213,6 +213,11 @@ namespace dal.Controllers
 
             ViewBag.Body = Resource_Projects.More;
 
+            ViewBag.Slides = new ProjectSlideModel[] {
+                        new ProjectSlideModel { Img = "/img/projects/more/more-baio-mongo.jpg", Thumb =  "/img/projects/more/more-baio-mongo-thumb.jpg", Title = "baio-mongo"},
+                        new ProjectSlideModel { Img = "/img/projects/more/more-open-mvc.jpg", Thumb =  "/img/projects/more/more-open-mvc-thumb.jpg", Title = "open-mvc"},
+                    };
+
             return View("Item");
 
         }
