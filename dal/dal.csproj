@@ -309,6 +309,7 @@
     <Content Include="assets\img\buzz\nytimes.png" />
     <Content Include="assets\img\buzz\techcrunch.png" />
     <Content Include="assets\img\buzz\thrillist.png" />
+    <Content Include="assets\img\data-avail-logo.png" />
     <Content Include="assets\img\logo.png" />
     <Content Include="assets\img\logo_2.png" />
     <Content Include="assets\img\logo_3.png" />
