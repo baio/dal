@@ -167,6 +167,11 @@ namespace dal.Controllers
                 Team = new[] { "Maxim Putilov - Project Lead, Programmer" }
             };
 
+            ViewBag.Slides = new ProjectSlideModel[] {
+                        new ProjectSlideModel { Img = "/img/projects/ural/ural.jpg", Thumb =  "/img/projects/ural/ural.jpg", Title = "Landing"},
+                        new ProjectSlideModel { Img = "/img/projects/ural/ural-general.jpg", Thumb =  "/img/projects/ural/ural-general-thumb.jpg", Title = "List of items"}
+                    };
+
             ViewBag.Body = Resource_Projects.Ural;
 
             return View("Item");
