@@ -523,6 +523,8 @@
     <Content Include="img\projects\zava\zava-landing.jpg" />
     <Content Include="img\projects\zava\zava-news-thumb.jpg" />
     <Content Include="img\projects\zava\zava-news.jpg" />
+    <Content Include="img\team\max-1.jpg" />
+    <Content Include="img\team\max-putilov-photo.jpg" />
     <Content Include="img\work\bahia.jpg" />
     <Content Include="img\work\books-1.jpg" />
     <Content Include="img\work\books.jpg" />
