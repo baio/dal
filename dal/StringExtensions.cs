@@ -8,7 +8,7 @@ namespace dal
 {
     public static class StringExtensions
     {
-        private static string _link = "<a href=\"{0}\">{0}</a>";
+        private static string _link = "<a href=\"{0}\" target=\"_blank\">{0}</a>";
 
         public static string ToHtml(this string str)
         {

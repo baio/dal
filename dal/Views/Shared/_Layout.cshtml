@@ -58,8 +58,8 @@
 				              			<li @Helpers.CurrentMenuItem("Home", "About", Url.RequestContext.RouteData)><a href="/Home/About">About</a></li>
 										<li @Helpers.CurrentMenuItem("Home", "Services", Url.RequestContext.RouteData)><a href="/Home/Services">Services</a></li>
 										@*<li @Helpers.CurrentMenuItem("Home", "Offer", Url.RequestContext.RouteData)><a href="/Home/Offer">Offer</a></li>*@
-										<li><a href="http://data-avail.blogspot.ru/">Blog</a></li>
-				              			<li><a href="http://dataavail.uservoice.com/knowledgebase/articles/157510-faq">FAQ</a></li>
+										<li><a href="http://data-avail.blogspot.ru/" target="_blank">Blog</a></li>
+				              			<li><a href="http://dataavail.uservoice.com/knowledgebase/articles/157510-faq" target="_blank">FAQ</a></li>
 										<li @Helpers.CurrentMenuItem("Home", "Contact", Url.RequestContext.RouteData)><a href="/Home/Contact">Contact</a></li>
 				            		</ul><!-- /nav -->
 
@@ -101,21 +101,21 @@
 					<div class="span3">
 						<h4 class="title"><i class="icon-comments"></i>Latest From Blog</h4>	
 						<div class="media">
-							<a class="pull-left" href="@blogFeed[0].Link">
+							<a class="pull-left" href="@blogFeed[0].Link" target="_blank" >
 							    <img width="89" height="64" class="media-object img-polaroid" src="@blogFeed[0].Img">
 							</a>
 							<div class="media-body">
 							    @blogFeed[0].Text
-							    <br><a href="blog.html" class="">read more</a>
+							    <br><a href="@blogFeed[0].Link" target="_blank" class="">read more</a>
 							</div>
 						</div>	
 						<div class="media">
-							<a class="pull-left" href="@blogFeed[1].Link">
+							<a class="pull-left" href="@blogFeed[1].Link" target="_blank" >
 							    <img width="89" height="64" class="media-object img-polaroid" src="@blogFeed[1].Img">
 							</a>
 							<div class="media-body">
 							   	@blogFeed[1].Text
-							    <br><a href="blog.html" class="">read more</a>
+							    <br><a href="@blogFeed[1].Link" target="_blank" class="">read more</a>
 							</div>
 						</div>	
 					</div>	
@@ -123,12 +123,12 @@
 					<div class="span3">
 						<h4 class="title"><i class="icon-map-marker"></i>Contact</h4>
 						<div class="">
-							<span class="grey-light">Address:</span>&nbsp;<span class="">Moscow</span></br>
-							<span class="grey-light">Phone:</span>&nbsp;<span>+7 967 201 1928</span></br>
+							<span class="grey-light">Address:</span>&nbsp;<span class="">Sadovaya-Triumphal'naya street 14, Moscow</span></br>
+							<span class="grey-light">Phone:</span>&nbsp;<span>+7 985 3122802</span></br>
 							<span class="grey-light">Email:</span>&nbsp;<a href="mailto:info@data-avail.com" class="">info@data-avail.com</a>
 							<div class="margin-top-5">
-								<a href="contact.html">
-									<img  src="/assets/img/map.jpg" 
+								<a href="/Home/Contact">
+									<img  src="/img/map-footer.jpg" 
 									alt="map" class="img-rounded tooltips"  data-original-title="View our location">
 								</a>
 							</div>
@@ -136,25 +136,11 @@
 					</div>	
 
 					<div class="span3">
-						<h4 class="title"><i class="icon-envelope-alt"></i>Subscribe</h4>
-						<div class="margin-bottom-10">
-						Subscribe to our newsletter and stay up to date with the latest news!	
-						</div>	
-						<form class="form-inline">
-						  <input type="text" class="input-medium" placeholder="Your email">
-						  &nbsp;<button type="submit" class="btn btn-inverse">Go</button>
-						</form>	
-
 						<h4 class="title"><i class="icon-heart"></i>Stay Tuned</h4>
 						<div class="clearfix">
-							<a href="http://www.linkedin.com/company/data-avail" class="iconify"><i class="icon-linkedin"></i></a>
-							<!--<a href="#" class="iconify"><i class="icon-google-plus"></i></a>-->
-							<a href="https://twitter.com/dataavail" class="iconify"><i class="icon-twitter"></i></a>
-                            <!--
-							<a href="#" class="iconify"><i class="icon-facebook"></i></a>
-							<a href="#" class="iconify"><i class="icon-pinterest"></i></a>
-                            -->
-							<a href="https://github.com/data-avail" class="iconify"><i class="icon-github"></i></a>
+							<a href="http://www.linkedin.com/company/data-avail" class="iconify" target="_blank"><i class="icon-linkedin"></i></a>
+							<a href="https://twitter.com/dataavail" class="iconify" target="_blank"><i class="icon-twitter"></i></a>
+							<a href="https://github.com/data-avail" class="iconify" target="_blank"><i class="icon-github"></i></a>
 						</div>	
 					</div>														
 						
@@ -174,11 +160,10 @@
 							<ul class="menu white pull-right">
 								<li><a href="/">Home</a></li>
 								<li><a href="/Home/About">About</a></li>
-								<li><a href="/Home/Projects">Projects</a></li>
+								<li><a href="/Project">Projects</a></li>
 								<li><a href="/Home/Services">Services</a></li>
-								<li><a href="/Home/Offer">Offer</a></li>
-								<li><a href="http://data-avail.blogspot.ru/">Blog</a></li>
-								<li><a href="http://dataavail.uservoice.com/knowledgebase/articles/157510-faq">FAQ</a></li>
+								<li><a href="http://data-avail.blogspot.ru/" target="_blank">Blog</a></li>
+								<li><a href="http://dataavail.uservoice.com/knowledgebase/articles/157510-faq" target="_blank">FAQ</a></li>
 								<li><a href="/Home/Contact">Contact</a></li>
 							</ul>
 						</div><!-- /quick-menu -->
