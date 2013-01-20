@@ -1,5 +1,6 @@
 ﻿@{
     ViewBag.Title = "About";
+    var latestTweets = (dal.Models.TwitModel[])ViewBag.LatestTweets;
 }
 
 <div id="content-title">
@@ -22,94 +23,40 @@
                 <h4 class="title grey">Company</h4>
 
                 <div class="row-fluid">
-                    <div class="span6">
+                    <div class="span12">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        We are command of mature professionals, who excited to develop top edge IT products, solve hard problems and enjoying satisfaction of your clients. Core of your team is based in Moscow, Russia, though there are some people who works with us remotely or on part-time basis.
                         </p>
                     </div>
+                    @*
                     <div class="span6">
                         <p>
                             <iframe src="http://player.vimeo.com/video/35120870?title=0&amp;byline=0&amp;portrait=0&amp;color=C41230" width="100%" height="300" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
                         </p>
                     </div>
+                    *@
                 </div>
 
                 <hr class="dashed">
 
                 <h4 class="title grey">Meet the Team</h4>
                 <div class="row-fluid">
-                    <div class="span6">
-                        <h5 class="title grey">Tim Stone, CEO.</h5>
+                    <div class="span12">
+                        <h5 class="title grey">Max Putilov, CEO.</h5>
                         <p>
                             <img src="assets/img/photo.jpg" class="img-polaroid" alt="" align="right">
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-									sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                Working in industry more than 10 years, started with programming for POS terminals, then move to desktop windows development and now master web development area. Has expertise knowledge of C#, ASP.NET MVC and web clients technologies such as JavaScript and CoffeeScript. Likes to discover new  areas and technologies which empower development process and make it easier and more fun. In spare time excited to learn new subjects (not only programming stuff) on coursera and to compensate sedentary living style likes to run and snowboard.                        
                         </p>
                         <div class="margin-top-5 pull-right">
-                            <a href="#" class="iconify"><i class="icon-linkedin"></i></a>
-                            <a href="#" class="iconify"><i class="icon-google-plus"></i></a>
-                            <a href="#" class="iconify"><i class="icon-twitter"></i></a>
-                            <a href="#" class="iconify"><i class="icon-facebook"></i></a>
-                            <a href="#" class="iconify"><i class="icon-pinterest"></i></a>
-                            <a href="#" class="iconify"><i class="icon-github"></i></a>
+                            <a href="http://www.linkedin.com/pub/max-putilov/25/b56/807" class="iconify"><i class="icon-linkedin"></i></a>
+                            <a href="https://plus.google.com/u/0/108663543178600228657/posts" class="iconify"><i class="icon-google-plus"></i></a>
+                            <a href="https://twitter.com/baio1980" class="iconify"><i class="icon-twitter"></i></a>
+                            <a href="https://www.facebook.com/baio1980" class="iconify"><i class="icon-facebook"></i></a>
+                            @*<a href="#" class="iconify"><i class="icon-pinterest"></i></a>*@
+                            <a href="https://github.com/baio" class="iconify"><i class="icon-github"></i></a>
                         </div>
                     </div>
                     <div class="clearfix visible-phone"></div>
-                    <div class="span6">
-                        <h5 class="title grey">Lisa Cooper, CTO.</h5>
-                        <p>
-                            <img src="assets/img/photo.jpg" class="img-polaroid" alt="" align="right">
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-									sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        </p>
-                        <div class="margin-top-5 pull-right">
-                            <a href="#" class="iconify"><i class="icon-linkedin"></i></a>
-                            <a href="#" class="iconify"><i class="icon-google-plus"></i></a>
-                            <a href="#" class="iconify"><i class="icon-twitter"></i></a>
-                            <a href="#" class="iconify"><i class="icon-facebook"></i></a>
-                            <a href="#" class="iconify"><i class="icon-pinterest"></i></a>
-                            <a href="#" class="iconify"><i class="icon-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row-fluid margin-top-10">
-                    <div class="span6">
-                        <h5 class="title grey">Kim Lim, VP of Marketing.</h5>
-                        <p>
-                            <img src="assets/img/photo.jpg" class="img-polaroid" alt="" align="right">
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-									sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        </p>
-                        <div class="margin-top-5 pull-right">
-                            <a href="#" class="iconify"><i class="icon-linkedin"></i></a>
-                            <a href="#" class="iconify"><i class="icon-google-plus"></i></a>
-                            <a href="#" class="iconify"><i class="icon-twitter"></i></a>
-                            <a href="#" class="iconify"><i class="icon-facebook"></i></a>
-                            <a href="#" class="iconify"><i class="icon-pinterest"></i></a>
-                            <a href="#" class="iconify"><i class="icon-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="clearfix visible-phone"></div>
-                    <div class="span6">
-                        <h5 class="title grey">Ashley Lohan, Art Director.</h5>
-                        <p>
-                            <img src="assets/img/photo.jpg" class="img-polaroid" alt="" align="right">
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-									sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        </p>
-                        <div class="margin-top-5 pull-right">
-                            <a href="#" class="iconify"><i class="icon-linkedin"></i></a>
-                            <a href="#" class="iconify"><i class="icon-google-plus"></i></a>
-                            <a href="#" class="iconify"><i class="icon-twitter"></i></a>
-                            <a href="#" class="iconify"><i class="icon-facebook"></i></a>
-                            <a href="#" class="iconify"><i class="icon-pinterest"></i></a>
-                            <a href="#" class="iconify"><i class="icon-github"></i></a>
-                        </div>
-                    </div>
                 </div>
                 <p>
                 </p>
@@ -120,16 +67,14 @@
                 <h4 class="title dark-grey">Latest Tweets</h4>
                 <div class="media">
                     <div class="media-body">
-                        <div class="bold">Data-Avail. @@anybizz</div>
-                        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-							    <a href="#" class="">http://t.co/SJPmv81g</a>
+                        <div class="bold">Data-Avail. @@@latestTweets[0].Name</div>
+                        @Html.Raw(@latestTweets[0].Text)
                     </div>
                 </div>
                 <div class="media">
                     <div class="media-body">
-                        <div class="bold">Data-Avail. @@anybizz</div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-							  <a href="#" class="">http://t.co/SJPmv11g</a>
+                        <div class="bold">Data-Avail. @@@latestTweets[1].Name</div>
+                        @Html.Raw(@latestTweets[1].Text)
                     </div>
                 </div>
 
