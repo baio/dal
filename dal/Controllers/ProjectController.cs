@@ -14,6 +14,7 @@ namespace dal.Controllers
     {
         public ActionResult Index()
         {
+            //
             var model = new ProjectModel[]
             {
                 new ProjectModel {

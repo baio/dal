@@ -484,6 +484,7 @@
     <Content Include="img\logos\nodejs.png" />
     <Content Include="img\logos\octocat.png" />
     <Content Include="img\logos\sqlserver.png" />
+    <Content Include="img\map-footer.jpg" />
     <Content Include="img\projects\more\more-baio-mongo-thumb.jpg" />
     <Content Include="img\projects\more\more-baio-mongo.jpg" />
     <Content Include="img\projects\more\more-open-mvc-thumb.jpg" />
