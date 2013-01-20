@@ -109,7 +109,7 @@ namespace dal.Controllers
                 Team = new[] { "Maxim Putilov - Project Lead, Programmer" }
             };
 
-            ViewBag.Body = Resource_Projects.TwiTur;
+            ViewBag.Body = Resource_Projects.Zava;
 
             ViewBag.Slides = new ProjectSlideModel[] {
                         new ProjectSlideModel { Img = "/img/projects/zava/zava-landing.jpg", Thumb =  "/img/projects/zava/zava-landing-thumb.jpg", Title = "Landing Page"},
