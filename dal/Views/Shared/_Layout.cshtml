@@ -85,7 +85,7 @@
 					
 				<div class="row-fluid">	
 					<div class="span12">
-					<a class="top" href="javascript:;">top</a>
+					<a class="top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" href="#">top</a>
 					</div>
 				</div>
 
@@ -102,7 +102,7 @@
 						<h4 class="title"><i class="icon-comments"></i>Latest From Blog</h4>	
 						<div class="media">
 							<a class="pull-left" href="@blogFeed[0].Link" target="_blank" >
-							    <img width="89" height="64" class="media-object img-polaroid" src="@blogFeed[0].Img">
+							    <img style="width:89px; height:64px" class="media-object img-polaroid" src="@blogFeed[0].Img">
 							</a>
 							<div class="media-body">
 							    @blogFeed[0].Text
@@ -111,7 +111,7 @@
 						</div>	
 						<div class="media">
 							<a class="pull-left" href="@blogFeed[1].Link" target="_blank" >
-							    <img width="89" height="64" class="media-object img-polaroid" src="@blogFeed[1].Img">
+							    <img style="width:89px; height:64px" class="media-object img-polaroid" src="@blogFeed[1].Img">
 							</a>
 							<div class="media-body">
 							   	@blogFeed[1].Text
