@@ -71,8 +71,8 @@ namespace dal.Controllers
 
             ViewBag.ProjectSummary = new ProjectSummaryModel { 
                 Company = "Data-Avail",
-                WebsiteUrl = "http://twitur.ru",
-                WebsiteCaption = "twitur.ru",
+                WebsiteUrl = "http://www.twitur.ru",
+                WebsiteCaption = "www.twitur.ru",
                 SourceCaption = "bitbucket",
                 SourceUrl = "https://bitbucket.org/baio/twitur",
                 Challenges = "Project designed and built as single web page application.<br/>Large volumes of data to work with.",
@@ -100,12 +100,12 @@ namespace dal.Controllers
             ViewBag.ProjectSummary = new ProjectSummaryModel
             {
                 Company = "Data-Avail",
-                WebsiteUrl = "http://zava.su",
-                WebsiteCaption = "zava.su",
+                WebsiteUrl = "http://www.zava.su",
+                WebsiteCaption = "www.zava.su",
                 SourceCaption = "bitbucket",
                 SourceUrl = "https://bitbucket.org/baio/zav",
                 Challenges = "Rapid development on the base of ASP.NET MVC.",
-                Features = "Web portal for mountain sky resort Zavjalikha.",
+                Features = "Web portal for mountain ski resort Zavjalikha.",
                 Duration = 1,
                 Team = new[] { "Maxim Putilov - Project Lead, Programmer" }
             };
@@ -129,8 +129,8 @@ namespace dal.Controllers
             ViewBag.ProjectSummary = new ProjectSummaryModel
             {
                 Company = "Data-Avail",
-                WebsiteUrl = "http://prezek.org",
-                WebsiteCaption = "prezek.org",
+                WebsiteUrl = "http://www.prezek.org",
+                WebsiteCaption = "www.prezek.org",
                 SourceCaption = "github",
                 SourceUrl = "https://github.com/data-avail/presec",
                 Challenges = "Rapid development on the base of ASP.NET MVC.",
