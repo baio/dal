@@ -2,6 +2,7 @@
 using dal.Models;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.ServiceModel.Syndication;
@@ -9,6 +10,7 @@ using System.Web;
 using System.Web.Caching;
 using System.Xml;
 using System.Xml.Linq;
+using TweetSharp;
 
 namespace dal
 {
@@ -64,18 +66,11 @@ namespace dal
             }
             else
             {
-                WebClient twitter = new WebClient();
+                var service = new TwitterService(ConfigurationManager.AppSettings["TWITTER_CONSUMER_KEY"], ConfigurationManager.AppSettings["TWITTER_CONSUMER_SECRET"]);
+                service.AuthenticateWith(ConfigurationManager.AppSettings["TWITTER_ACCESS_TOKEN"], ConfigurationManager.AppSettings["TWITTER_ACCESS_TOKEN_SECRET"]);
 
-                var str = twitter.DownloadString(new Uri("http://api.twitter.com/1/statuses/user_timeline.xml?screen_name=dataavail&count=2&include_rts=1"));
-
-                XElement xmlTweets = XElement.Parse(str);
-
-                var r = xmlTweets.Descendants("status").Select(p => {
-                    var tweet = p.Element("retweeted_status");
-                    if (tweet == null)
-                        tweet = p;
-                    return new TwitModel { Text = tweet.Element("text").Value.ToHtml(), Name = tweet.Element("user").Element("name").Value };
-                }).ToArray();
+                var tweets = service.ListTweetsOnUserTimeline(new ListTweetsOnUserTimelineOptions { IncludeRts = true, Count = 2 });
+                var r = tweets.Select(p => new TwitModel { Text = p.TextAsHtml, Name = p.Author.ScreenName }).ToArray();
 
                 cache.Add("ReadTwits", r, null, DateTime.MaxValue, new TimeSpan(ReadTwitCacheTimeOut, 0, 0), CacheItemPriority.Default, null);
 
