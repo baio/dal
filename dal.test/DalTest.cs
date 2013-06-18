@@ -15,7 +15,7 @@ namespace dal.test
         [TestMethod]
         public void TestTwitReader()
         {
-            var r = Utils.ReadTweets();
+            //var r = Utils.ReadTweets();
         }
     }
 }
