@@ -71,7 +71,7 @@ namespace dal.Controllers
 
             ViewBag.ProjectSummary = new ProjectSummaryModel { 
                 Company = "Data-Avail",
-                WebsiteUrl = "http://www.twitur.ru",
+                WebsiteUrl = "http://twitur.apphb.com/",
                 WebsiteCaption = "www.twitur.ru",
                 SourceCaption = "bitbucket",
                 SourceUrl = "https://bitbucket.org/baio/twitur",
@@ -100,7 +100,7 @@ namespace dal.Controllers
             ViewBag.ProjectSummary = new ProjectSummaryModel
             {
                 Company = "Data-Avail",
-                WebsiteUrl = "http://www.zava.su",
+                WebsiteUrl = "http://zav.apphb.com/",
                 WebsiteCaption = "www.zava.su",
                 SourceCaption = "bitbucket",
                 SourceUrl = "https://bitbucket.org/baio/zav",
@@ -129,7 +129,7 @@ namespace dal.Controllers
             ViewBag.ProjectSummary = new ProjectSummaryModel
             {
                 Company = "Data-Avail",
-                WebsiteUrl = "http://www.prezek.org",
+                WebsiteUrl = "http://election2012.apphb.com/",
                 WebsiteCaption = "www.prezek.org",
                 SourceCaption = "github",
                 SourceUrl = "https://github.com/data-avail/presec",
